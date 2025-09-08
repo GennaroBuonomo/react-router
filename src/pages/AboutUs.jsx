@@ -5,7 +5,7 @@ const AboutUs = () => {
     <div className="container">
       <div className="row">
         <div className="col-12">
-          <h2>AboutUs</h2>
+          <h1>AboutUs</h1>
         </div>
       </div>
     </div>

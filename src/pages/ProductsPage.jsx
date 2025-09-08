@@ -5,7 +5,7 @@ const ProductsPage = () => {
    <div className="container">
       <div className="row">
         <div className="col-12">
-          <h2>ProductsPage</h2>
+          <h1>ProductsPage</h1>
         </div>
       </div>
     </div>

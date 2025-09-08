@@ -5,7 +5,7 @@ const HomePage = () => {
     <div className="container">
       <div className="row">
         <div className="col-12">
-          <h2>HomePage</h2>
+          <h1>HomePage</h1>
         </div>
       </div>
     </div>
