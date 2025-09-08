@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -8,13 +9,13 @@ const Header = () => {
         <div className="col-12">
           <ul className="list-unstyled d-flex">
             <li className="me-3">
-              <a>HomePage</a>
+              <NavLink to="/">HomePage</NavLink>
             </li>
              <li className="me-3">
-              <a>chi Siamo</a>
+              <NavLink to="/about-us">chi Siamo</NavLink>
             </li>
              <li className="me-3">
-              <a>Prodotti</a>
+              <NavLink to="/producspage">Prodotti</NavLink>
             </li>
           </ul>
         </div>

@@ -4,7 +4,7 @@ import Header from '../components/Header';
 const AboutUs = () => {
   return (
     <>
-    <header />
+    <Header />
      <div className="container">
        <div className="row">
          <div className="col-12">

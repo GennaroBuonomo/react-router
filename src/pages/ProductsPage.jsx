@@ -14,7 +14,7 @@ const ProductsPage = () => {
 
   return (
     <>
-    <header />
+    <Header />
     <div className="container py-4">
        <div className="row g-4">
          <div className="col-12">
