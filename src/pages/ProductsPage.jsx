@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import Header from '../components/Header';
+import { Link } from 'react-router-dom';
 
 const ProductsPage = () => {
   const [products, setProducts] = useState([]);
@@ -35,6 +36,11 @@ const ProductsPage = () => {
                      <p>{product.description}</p>
                    </div>
                  </div>
+                  <div>
+                    <Link to={`/products/${product.id}`} className="btn btn-primary">
+                      Dettagli
+                    </Link>
+                  </div>
                </div>
              </div>
           )
