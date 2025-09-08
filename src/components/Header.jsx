@@ -8,7 +8,13 @@ const Header = () => {
         <div className="col-12">
           <ul className="list-unstyled d-flex">
             <li className="me-3">
-              
+              <a>HomePage</a>
+            </li>
+             <li className="me-3">
+              <a>chi Siamo</a>
+            </li>
+             <li className="me-3">
+              <a>Prodotti</a>
             </li>
           </ul>
         </div>
