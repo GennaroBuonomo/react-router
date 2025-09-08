@@ -7,16 +7,35 @@ const ProductsPage = () => {
 
   useEffect(() => {
     axios.get("https://fakestoreapi.com/products").then((resp) => {
-      console.log(resp.data)
+      setProducts(resp.data)
     });
   }, []);
 
   return (
-   <div className="container">
-      <div className="row">
+   <div className="container py-4">
+      <div className="row g-4">
         <div className="col-12">
-          <h1>ProductsPage</h1>
+          <h1 className="text-center mb-4">ProductsPage</h1>
         </div>
+        {products.map(product => {
+          return (
+            <div className="col-md-4" key={product.id}>
+              <div className="card mt-4">
+                <div className="card-header">
+                  <h5 className="card-title">{product.title}</h5>
+                  <div className="card-body">
+                    <div className="card h-100">
+                     <img src={product.image} alt={product.title} className="card-img" />
+                    </div>
+                    <p className="mt-3">- {product.category}</p>
+                    <p className="fw-bold"><em>{product.price}&euro;</em></p>
+                    <p>{product.description}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
