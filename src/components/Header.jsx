@@ -7,15 +7,15 @@ const Header = () => {
     <div className="container-fluid">
       <div className="row">
         <div className="col-12">
-          <ul className="list-unstyled d-flex">
+          <ul className="list-unstyled d-flex list-decoration">
             <li className="me-3">
-              <NavLink to="/">HomePage</NavLink>
+              <NavLink to="/" className="text-decoration-none">HomePage</NavLink>
             </li>
              <li className="me-3">
-              <NavLink to="/about-us">chi Siamo</NavLink>
+              <NavLink to="/about-us" className="text-decoration-none">chi Siamo</NavLink>
             </li>
              <li className="me-3">
-              <NavLink to="/products">Prodotti</NavLink>
+              <NavLink to="/products" className="text-decoration-none">Prodotti</NavLink>
             </li>
           </ul>
         </div>
