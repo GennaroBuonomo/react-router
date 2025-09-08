@@ -35,12 +35,12 @@ const ProductsPage = () => {
                      <p className="fw-bold"><em>{product.price}&euro;</em></p>
                      <p>{product.description}</p>
                    </div>
-                 </div>
-                  <div>
+                  <div className="d-flex justify-content-center ">
                     <Link to={`/products/${product.id}`} className="btn btn-primary">
                       Dettagli
                     </Link>
                   </div>
+                 </div>
                </div>
              </div>
           )
