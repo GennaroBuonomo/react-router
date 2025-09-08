@@ -18,7 +18,7 @@ const ProductsPage = () => {
     <div className="container py-4">
        <div className="row g-4">
          <div className="col-12">
-           <h1 className="text-center mb-4">ProductsPage</h1>
+           <h1 className="text-center mb-4">Pagina Prodotti</h1>
          </div>
          {products.map(product => {
            return (
