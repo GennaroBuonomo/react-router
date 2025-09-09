@@ -36,7 +36,7 @@ const ProductsPage = () => {
                      <p>{product.description}</p>
                    </div>
                   <div className="d-flex justify-content-center ">
-                    <Link to={`/products/${product.id}`} className="btn btn-primary">
+                    <Link to={`/ProductsPage/${product.id}`} className="btn btn-primary">
                       Dettagli
                     </Link>
                   </div>
